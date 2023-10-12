@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function checkPalindrome(string){
+            const arrayValues=string.split('');
+            const reverseArrayValues=arrayValues.reverse();
+            const reverseString=reverseArrayValues.join('');
+            if(string==reverseString){
+                console.log('It is a palindrome');
+            }
+            else{
+                console.log('It is not palindrome');
+            }
+        }
+        const string=prompt('Enter a string:');
+        checkPalindrome(string);
+    </script>
 </head>
 <body>
-    <script>
-        function display()
-        {
-            document.write("Name:"+this.name+"<BR>")
-                document.write("Address:"+this.address+"<BR>")
-        }
-        function person(name,address)
-        {
-            this.name=name
-            this.address=address
-            this.display=display
-        }
-        person("Amreen","Chennai")
-        display();
-    </script>
+    
 </body>
 </html>

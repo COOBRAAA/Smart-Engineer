@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>onLoad and onUnload</title>
+    <title>Document</title>
+    <script>
+        function countString(str,letter){
+            let count=0;
+            for(let i=0;i<str.length;i++){
+                if(str.charAt(i)==letter){
+                    count+=1;
+                }
+            }
+            return count;
+        }
+        const string=prompt('Enter a string: ');
+        const letterToCheck=prompt('Enter a letter to check: ');
+        const result=countString(string,letterToCheck);
+        console.log(result);
+    </script>
 </head>
-<body onLoad="window.alert('Hello, and welcome to this page.');"
-onUnload="window.alert('You unloaded the page. Goodbye!');">
-<h1>The onLoad and onUnload Methods</h1>
-<hr>
-This page displays a "hello" dialog when you load it, and a "Goodbye" dialog when you unload it.Annoying,isn't it?
-<hr>
-This is done through event handlers specified in this document's & LTBODY &GT tag. Aside from that tag, the rest of the document doesn't affect the dialogs.
-<hr>    
+<body>
+    
 </body>
 </html>

@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function capitalizeFirstLetter(str){
+            const capitalized=str.charAt(0).toUpperCase()+str.slice(1);
+            return capitalized;
+        }
+        const string=prompt('Enter a string: ');
+        const result=capitalizeFirstLetter(string);
+        console.log(result);
+    </script>
 </head>
 <body>
-    <script>
-        function hello(){
-            window.alert("You clicked the heading");
-        }
-    </script>
-        <P>Click <A onClick="hello();" HREF="">here</A>
-            you see a message</P> 
     
 </body>
 </html>

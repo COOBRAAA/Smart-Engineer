@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function checkPalindrome(string){
+            const arrayValues=string.split('');
+            const reverseArrayValues=arrayValues.reverse();
+            const reverseString=reverseArrayValues.join('');
+            if(string==reverseString){
+                console.log('It is a palindrome');
+            }
+            else{
+                console.log('It is not palindrome');
+            }
+        }
+        const string=prompt('Enter a string:');
+        checkPalindrome(string);
+    </script>
 </head>
 <body>
-    <script>
-        var s="Hello!";
-        var s1=s.big();
-        var s2=s1.blink();
-        var s3=s2.bold();
-        document.write(s3);
-    </script>
+    
 </body>
 </html>

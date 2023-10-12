@@ -4,30 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function checkPalindrome(string){
+            const arrayValues=string.split('');
+            const reverseArrayValues=arrayValues.reverse();
+            const reverseString=reverseArrayValues.join('');
+            if(string==reverseString){
+                console.log('It is a palindrome');
+            }
+            else{
+                console.log('It is not palindrome');
+            }
+        }
+        const string=prompt('Enter a string:');
+        checkPalindrome(string);
+    </script>
 </head>
 <body>
-    <script>
-        alpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        document.write(alpha.substring(0,4));
-        document.write("<BR>")
-        document.write(alpha.substring(10,12));
-        document.write("<BR>")
-        
-        document.write(alpha.substring(12,10));
-        document.write("<BR>")
-        
-        document.write(alpha.substring(6,7));
-        document.write("<BR>")
-        
-        document.write(alpha.substring(24,26));
-        document.write("<BR>")
-        
-        document.write(alpha.substring(0,26));
-        document.write("<BR>")
-        
-        document.write(alpha.substring(6,6));
-        document.write("<BR>")
-        
-    </script>
+    
 </body>
 </html>
